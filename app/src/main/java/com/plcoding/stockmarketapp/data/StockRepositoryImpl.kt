@@ -39,6 +39,7 @@ class StockRepositoryImpl @Inject constructor(
 
             val remoteListings = try {
                 val response = api.getListings()
+
             }catch (e: IOException){
                 e.printStackTrace()
                 emit(Resource.Error("couldn't load data"))
